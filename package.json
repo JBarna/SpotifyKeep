@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/JBarna/SpotifyKeep/issues"
   },
-  "homepage": "https://github.com/JBarna/SpotifyKeep#readme"
+  "homepage": "https://github.com/JBarna/SpotifyKeep#readme",
+  "dependencies": {
+    "spotify-node-applescript": "git+https://github.com/matthewnitschke/spotify-node-applescript.git"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11"
+  }
 }
