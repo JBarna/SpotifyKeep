@@ -1,0 +1,26 @@
+{
+  "name": "spotifykeep",
+  "version": "1.0.0",
+  "description": "keep ya music kids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBarna/SpotifyKeep.git"
+  },
+  "keywords": [
+    "spotify",
+    "hotkey",
+    "keep",
+    "save",
+    "playlist"
+  ],
+  "author": "JBizzle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JBarna/SpotifyKeep/issues"
+  },
+  "homepage": "https://github.com/JBarna/SpotifyKeep#readme"
+}
