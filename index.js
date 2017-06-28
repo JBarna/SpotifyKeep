@@ -2,11 +2,11 @@
 // https://electron.atom.io/docs/api/global-shortcut/
 
 const {app} = require('electron'),
-    {Hotkey, OAuthManager, SaveSong} = require('./lib');
+    Lib = require('./lib');
 
 console.debug = console.log;
 app.on('ready', () => {
-    OAuthManager.getBearerToken()
+    Lib.OAuthManager.getBearerToken().then(token => console.log(token))
         .catch(Function.prototype);
-    Hotkey(SaveSong);
+    Lib.Hotkey(Lib.SaveSong);
 });
