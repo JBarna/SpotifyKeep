@@ -1,6 +1,3 @@
-// docs
-// https://electron.atom.io/docs/api/global-shortcut/
-
 const {app} = require('electron'),
     Lib = require('./lib');
 
@@ -10,7 +7,7 @@ console.debug = process.argv[2] === 'debug' ? console.log.bind(null, "DEBUG") : 
 // start our app
 app.on('ready', () => {
     Lib.OAuthManager.getBearerToken().then(console.debug.bind(null, 'Initial Access Token'))
-        .catch(console.debug);
+        .catch(console.debug.bind(null, 'Error receiving first bearerToken'));
         
     Lib.Hotkey(Lib.SaveSong);
 });
