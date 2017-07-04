@@ -6,8 +6,9 @@ console.debug = process.argv[2] === 'debug' ? console.log.bind(null, "DEBUG") : 
 
 // start our app
 app.on('ready', () => {
-    Lib.OAuthManager.getBearerToken().then(console.debug.bind(null, 'Initial Access Token'))
-        .catch(console.debug.bind(null, 'Error receiving first bearerToken'));
+    // Lib.OAuthManager.getBearerToken().then(console.debug.bind(null, 'Initial Access Token'))
+    //     .catch(console.debug.bind(null, 'Error receiving first bearerToken'));
         
-    Lib.Hotkey(Lib.SaveSong);
+    // Lib.Hotkey(Lib.SaveSong);
+    Lib.Notification();
 });
