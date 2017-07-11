@@ -23,9 +23,7 @@
     "url": "https://github.com/JBarna/SpotifyKeep/issues"
   },
   "homepage": "https://github.com/JBarna/SpotifyKeep#readme",
-  "dependencies": {
-    "spotify-node-applescript": "git+https://github.com/matthewnitschke/spotify-node-applescript.git"
-  },
+  "dependencies": {},
   "devDependencies": {
     "electron": "^1.6.11"
   }
