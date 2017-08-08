@@ -12,6 +12,7 @@ app.on('ready', () => {
         
     Lib.Hotkey(Lib.SaveSong);
     setInterval(Lib.Playlist, 1000 * 60 * 5);
-    Lib.Tray();
     Lib.Playlist();
 });
+
+app.on('window-all-closed', Function.prototype);
