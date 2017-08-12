@@ -13,6 +13,7 @@ var options = {
     electronVersion: '1.7.3',
     ignore: [
         /\/token.json/,
+        /\/usersettings.json/,
         /\/thumb.*/
     ]
 };
