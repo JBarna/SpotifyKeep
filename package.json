@@ -25,7 +25,9 @@
     "url": "https://github.com/JBarna/SpotifyKeep/issues"
   },
   "homepage": "https://github.com/JBarna/SpotifyKeep#readme",
-  "dependencies": {},
+  "dependencies": {
+    "opener": "^1.4.3"
+  },
   "devDependencies": {
     "electron-packager": "^8.7.2"
   }
