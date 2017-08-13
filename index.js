@@ -9,8 +9,8 @@ app.on('ready', () => {
     Lib.OAuthManager.getBearerToken().then(token => {
         console.debug('Initial Access Token', token);
         Lib.Hotkey(Lib.SaveSong);
-        setInterval(Lib.Playlist, 1000 * 60 * 10);
-        Lib.Playlist();
+        setInterval(Lib.Playlist.repeat, 1000 * 60 * 10);
+        Lib.Playlist.repeat();
     })
     .catch(console.debug.bind(null, 'Error receiving bearerToken'));
     Lib.Tray();
