@@ -8,8 +8,9 @@ console.debug = process.argv[2] === 'debug' ? console.log.bind(null, "DEBUG") : 
 app.on('ready', () => {
     Lib.OAuthManager.getBearerToken().then(token => {
         console.debug('Initial Access Token', token);
-        Lib.Hotkey(Lib.SaveSong);
+        Lib.Hotkey(Lib.SaveSong.save);
         setInterval(Lib.Playlist.repeat, 1000 * 60 * 10);
+        Lib.SaveSong.init();
         Lib.Playlist.repeat();
     })
     .catch(console.debug.bind(null, 'Error receiving bearerToken'));
