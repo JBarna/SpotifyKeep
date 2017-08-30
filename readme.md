@@ -14,7 +14,7 @@ I love to listen to new music, and I love to listen to music *while I'm busy doi
 * [Mac Package]()
 
 ### How to use
-* `hotkey` - Press `Alt` and `~` together to save the song you're listening to. Even works if the song is playing from a different source!
+* `hotkey` - Press `Alt` and `~` together to save the song you're listening to. Even works if the song is playing from a different source like Sonos!
 * `right click` - the icon to access options, report issues, quit, and update.
 
 ## Wait, there's more!
