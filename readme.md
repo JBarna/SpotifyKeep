@@ -15,7 +15,7 @@ I love to listen to new music, and I love to listen to music *while I'm busy doi
 
 ### How to use
 * `hotkey` - Press `Alt` and `~` together to save the song you're listening to. Even works if the song is playing from a different source like Sonos!
-* `right click` - the icon to access options, report issues, quit, and update.
+* `click` - the icon to access options, report issues, quit, and update.
 
 ## Wait, there's more!
 SpotifyKeep also copies all of your saved songs to a backup playlist named `Keep`. This is for a few reasons:
