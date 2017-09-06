@@ -1,7 +1,7 @@
 # Spotify Keep
 ---
 
-#### SpotifyKeep is an application that lets you save the music you're listening to with the push of a button!
+#### SpotifyKeep is an application that lets you backup and save the music you're listening to with the push of a button!
 
 ## Why?
 I love to listen to new music, and I love to listen to music *while I'm busy doing other things.* The **problem** is that Spotify doesn't give you an easy way to save a song ***without minimizing what you're doing***.
