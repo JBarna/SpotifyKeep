@@ -29,6 +29,7 @@
     "opener": "^1.4.3"
   },
   "devDependencies": {
+    "electron": "1.7.9",
     "electron-packager": "^8.7.2"
   }
 }

@@ -5,12 +5,8 @@ var options = {
     dir: __dirname,
     out: 'out',
     arch: 'all',
-    download: {
-        cache: path.join(__dirname, '..')
-    }, 
-    icon: './Checkmark',
+    icon: './icons/Checkmark',
     overwrite: true,
-    electronVersion: '1.7.3',
     ignore: [
         /\/token.json/,
         /\/ApplicationState.json/,

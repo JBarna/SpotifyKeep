@@ -33,3 +33,7 @@ function fetchUserData() {
 // prevents the shutdown of our application
 // when the user closes our browser window
 app.on('window-all-closed', Function.prototype);
+
+// stop chrome from saving processing power in the background 
+// without this the save can take >30 seconds to complete on mac
+app.commandLine.appendSwitch("disable-renderer-backgrounding");
