@@ -9,9 +9,9 @@ I love to listen to new music, and I love to listen to music *while I'm busy doi
 ### What are we going to do??
 ***Install SpotifyKeep!***
 * Windows Package - unzip and run SpotifyKeep.exe
-    * [32 bit](https://github.com/JBarna/SpotifyKeep/releases/download/1.0.0/SpotifyKeep-win32-ia32.zip)
-    * [64 bit](https://github.com/JBarna/SpotifyKeep/releases/download/1.0.0/SpotifyKeep-win32-x64.zip)
-* [Mac Package](https://github.com/JBarna/SpotifyKeep/releases/download/1.0.0/SpotifyKeep.zip)
+    * [32 bit](https://github.com/JBarna/SpotifyKeep/releases/download/1.1.0/SpotifyKeep-win32-ia32.zip)
+    * [64 bit](https://github.com/JBarna/SpotifyKeep/releases/download/1.1.0/SpotifyKeep-win32-x64.zip)
+* [Mac Package](https://github.com/JBarna/SpotifyKeep/releases/download/1.1.0/SpotifyKeep.zip)
 
 ### How to use
 * `hotkey` - Press `Alt` and `~` together to save the song you're listening to. Even works if the song is playing from a different source like Sonos!
