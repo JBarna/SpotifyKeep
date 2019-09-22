@@ -5,6 +5,7 @@
   "description": "keep ya music kids",
   "main": "index.js",
   "scripts": {
+    "start": "electron . debug",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "node package"
   },
@@ -24,12 +25,11 @@
   "bugs": {
     "url": "https://github.com/JBarna/SpotifyKeep/issues"
   },
-  "homepage": "https://github.com/JBarna/SpotifyKeep#readme",
   "dependencies": {
-    "opener": "^1.4.3"
+    "opener": "^1.4.3",
+    "electron": "^1.7.9"
   },
   "devDependencies": {
-    "electron": "1.7.9",
     "electron-packager": "^8.7.2"
   }
 }

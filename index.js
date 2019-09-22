@@ -1,21 +1,27 @@
-const {app, Menu, Tray} = require('electron'),
+const {app, Menu, Tray, BrowserWindow, ipcMain} = require('electron'),
     Lib = require('./lib');
+
+let mainWindow
 
 // create our debug function if first command line argument is 'debug'
 console.debug = process.argv[2] === 'debug' ? console.log.bind(null, "DEBUG") : Function.prototype;
 
 // start our app
 app.on('ready', () => {
+    Lib.BrowserManager.setupCommunication()
+
     Lib.OAuthManager.getBearerToken()
         .then(() => Promise.all([fetchUserData(), Lib.SaveSong.init()]))
         .then(() => {
             Lib.Hotkey(Lib.SaveSong.save);
-            setInterval(Lib.Playlist, 1000 * 60 * 10);
-            Lib.Playlist();
+            setInterval(Lib.Playlist.BackupToKeep, 1000 * 60 * 30); // check every thirty minutes
+            Lib.Playlist.BackupToKeep();
         })
         .catch(console.debug.bind(null, 'Error receiving bearerToken or userInfo'));
     Lib.Tray();
 });
+
+ipcMain.on('hotkey', (event, arg) => Lib.Hotkey.test(arg, event))
 
 function fetchUserData() {
     // only load this information if we don't have it

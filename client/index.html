@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>🔥🔑</title>
+  </head>
+  <body>
+    <h1> ⌨️ HotKeys! ⌨️</h1>
+    <div id="hotkey-container">
+       <div id="new-container">
+         <fieldset>
+            <legend style="color:blue;font-weight:bold;">Add New</legend>
+            <table>
+               <tr>
+                  <td>Hotkey</td>
+                  <td><input id="new-hotkey-key" type="text"/></td>
+               </tr>
+               <tr>
+                  <td>Target</td>
+                  <td id="target-select">Loading...</td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td><input id="add-new-button" type="button" value="Add" onclick="handleAddHotkey()" /></td>
+               </tr>
+            </table>
+         </fieldset>
+       </div>
+    </div>
+    <div id="existing-container">
+      <fieldset>
+         <legend style="color:blue;font-weight:bold;">Exising</legend>
+         <table id="existing-container-table">
+         </table>
+      </fieldset>
+    </div>
+
+    <script src="render.js"> </script>
+    <script src="index.js"> </script>
+  </body>
+</html>
