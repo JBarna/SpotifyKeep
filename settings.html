@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Change Hotkey</title>
+    </head>
+    <body>
+        <h1>Change Hotkey</h1>
+        <h3>Instructions</h3>
+        <ol>
+            <li>Your current hotkey is: <bold id="current-hotkey"></bold></li>
+            <li>Think of your new desired hotkey and figure out how to write it using the accelerator format <button onclick="openDocs()">linked here.</button></li>
+            <li>Enter your new hotkey in the box and click the "Register Hotkey" button.</li>
+            <li>Press the hotkey combination and make sure the word "PRESSED" pops up in the hotkey testbed.</li>
+            <li>If you do not see the word "PRESSED" popup, then try a different hotkey until one works.</li>
+        </ol>
+        <form onsubmit="return handleSubmit()">
+            <input id="hotkey" type="text" name="hotkey" placeholder="Enter Hotkey Here"/>
+            <input type="submit" name="Register Hotkey"/>
+        </form>
+        <h3>Hotkey Testbed</h3>
+        <p id="testbed">NOT PRESSED</p>
+
+        <script>
+            function handleSubmit() {
+                const hotkeyVal = document.getElementById('hotkey').value
+                
+                window.electronAPI.changeHotkey(hotkeyVal)
+                return false;
+            }
+
+            function openDocs() {
+                window.electronAPI.openDocs()
+            }
+
+            function init() {
+                const testbedElem = document.getElementById('testbed')
+                const currentHotkeyElem = document.getElementById('current-hotkey')
+                let counter = null
+
+                window.electronAPI.receiveHotkey(() => {
+                    counter = 5
+                    decrease()
+                })
+
+                window.electronAPI.getHotkey()
+                    .then(hotkey => {
+                        currentHotkeyElem.innerText = hotkey
+                    })
+
+                function decrease() {
+                    if (counter === 0) {
+                        testbedElem.innerText = "NOT PRESSED"
+                        return
+                    }
+
+                    testbedElem.innerText = `PRESSED ... disappearing in ${counter}`
+                    counter--;
+                    setTimeout(decrease, 1000);
+                }
+            }
+
+            init()
+        </script>
+    </body>
+</html>

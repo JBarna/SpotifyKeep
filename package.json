@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/JBarna/SpotifyKeep#readme",
   "dependencies": {
-    "opener": "^1.4.3"
+    "opener": "^1.5.2"
   },
   "devDependencies": {
-    "electron": "1.7.9",
-    "electron-packager": "^8.7.2"
+    "electron": "^20.1.1",
+    "electron-packager": "^16.0.0"
   }
 }

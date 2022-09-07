@@ -9,7 +9,7 @@ app.on('ready', () => {
     Lib.OAuthManager.getBearerToken()
         .then(() => Promise.all([fetchUserData(), Lib.SaveSong.init()]))
         .then(() => {
-            Lib.Hotkey(Lib.SaveSong.save);
+            Lib.Hotkey.init(Lib.SaveSong.save);
             setInterval(Lib.Playlist, 1000 * 60 * 10);
             Lib.Playlist();
         })
