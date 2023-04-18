@@ -29,7 +29,7 @@
     "opener": "^1.5.2"
   },
   "devDependencies": {
-    "electron": "^20.1.1",
+    "electron": "^24.1.2",
     "electron-packager": "^16.0.0",
     "prettier": "^2.7.1"
   }
